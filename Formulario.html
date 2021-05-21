@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <title>Registrate</title>
+	<body>
+        <p>Nombre</p>
+        <input type="name">
+        <p>Apellido</p>
+        <input type="surname">
+        <p>Numero de Telefono(*)</p>
+        <input name="tel" type="text" placeholder="555.555.1211" required />
+        <input type="submit" value="Submit" />
+        <p>Correo electronico(*)</p> 
+        <form aria-autocomplete="on">
+            <input name="Email" type="text" placeholder="ejemplo@hotmail.com" required />
+            <input type="submit" value="Submit" />
+        </form>
+        <p>Contraseña</p>
+        <form aria-autocomplete="off">
+            <label for="password"> </label>
+            <input name="password" type="text" required />
+            <input type="submit" value="Submit" />
+        </form>
+        <p>Edad</p>
+        <input type="date">
+        <p>Su Genero(*)</p>
+        <input type="radio" name="gender" value="male" />Masculino<br />
+        <input type="radio" name="gender" value="female" />Femenino<br />
+        <input type="radio" name="gender" value="other" />Otro<br />
+        <p>
+        <button>Registrarse</button>
+	</body>
+</html>
