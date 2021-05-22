@@ -2,34 +2,34 @@
 <html>
     <title>Registrate</title>
 	<body>
-        <p>Nombre</p>
-        <input type="name">
-        <p>Apellido</p>
-        <input type="surname">
-        <p>Numero de Telefono(*)</p>
+        <p>Nombre(*)</p>
+        <form aria-autocomplete="off">       
+        <input name="name" type="text" required />
+        <input type="submit" value="Submit" />
+        <p>Apellido(*)</p>
+        <form aria-autocomplete="off">
+        <input name="surname" type="text" required />
+        <input type="submit" value="Submit" />
+        <p>Numero de Telefono</p>
         <form aria-autocomplete="off">
         <input name="tel" type="text" placeholder="+54 8888-8888" required />
-        <input type="submit" value="Submit" />
         </form>
-        <p>Direccion(*)</p>
+        <p>Direccion</p>
         <form aria-autocomplete="off">
-        <input name="direction" type="text" required />
-        <input type="submit" value="Submit" />
-        <p>Correo electronico(*)</p>
+        <input name="direction" type="text" />
+        <p>Correo electronico</p>
         </form>
         <form aria-autocomplete="on">
-            <input name="Email" type="text" placeholder="ejemplo@hotmail.com" required />
-            <input type="submit" value="Submit" />
+        <input name="Email" type="text" placeholder="ejemplo@hotmail.com" />
         </form>
-        <p>Contraseña(*)</p>
+        <p>Contraseña</p>
         <form aria-autocomplete="off">
-            <label for="password"> </label>
-            <input name="password" type="text" required />
-            <input type="submit" value="Submit" />
+        <label for="password"> </label>
+        <input name="password" type="text">
         </form>
         <p>Edad</p>
         <input type="date">
-        <p>Su Genero(*)</p>
+        <p>Su Genero</p>
         <input type="radio" name="gender" value="male" />Masculino<br />
         <input type="radio" name="gender" value="female" />Femenino<br />
         <input type="radio" name="gender" value="other" />Otro<br />
